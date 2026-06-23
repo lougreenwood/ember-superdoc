@@ -31,6 +31,7 @@
   ],
   "scripts": {
     "build": "rollup --config",
+    "build:demo": "BUILD_PAGES=true vite build --out-dir public",
     "format": "prettier . --cache --write",
     "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
     "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm run format",
